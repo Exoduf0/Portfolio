@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nori's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #222;
+            color: #fff;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to right, #5A4FCF, #8247E5);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        h1 {
+            margin: 0;
+            letter-spacing: 2px;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #8247E5;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #8247E5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #682DC4;
+        }
+
+        /* New CSS for futuristic look */
+
+        body {
+            background: #000;
+        }
+
+        header {
+            position: relative;
+        }
+
+        /* Animating the gradient background */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right, #5A4FCF, #8247E5, #5A4FCF);
+            opacity: 0.8;
+            z-index: -1;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        /* Animating the gradient */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        img {
+            object-fit: cover; /* Ensuring the image fits inside the circle */
+            border: 5px solid #8247E5;
+        }
+
+        section {
+            backdrop-filter: blur(5px);
+        }
+
+        h2 {
+            color: #8247E5;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        ul {
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            width: 50%;
+            margin-bottom: 20px;
+            color: #8247E5;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            li {
+                width: 100%;
+            }
+        }
+
+        /* Advanced CSS */
+
+        ::selection {
+            background-color: #5A4FCF;
+            color: #fff;
+        }
+
+        ::-moz-selection {
+            background-color: #5A4FCF;
+            color: #fff;
+        }
+
+        p code {
+            background-color: #333;
+            padding: 3px 5px;
+            border-radius: 3px;
+        }
+
+        pre {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Customized styling */
+
+        body {
+            background-color: #36285F;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right, #7B6FB8, #36285F, #7B6FB8);
+            opacity: 0.8;
+            z-index: -1;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        header {
+            background: linear-gradient(to right, #7B6FB8, #36285F);
+            border-radius: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #FFFFFF;
+        }
+
+        img {
+            border: 10px solid #8247E5;
+        }
+
+        section {
+            background-color: #1D1443;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #8247E5;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        li {
+            color: #8247E5;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        pre {
+            background-color: #1D1443;
+            color: #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn.discordapp.com/attachments/1131909320825655327/1134206160803733514/Przechwytywanie.PNG"
+            alt="Profile Picture">
+        <h1>Nori</h1>
+    </header>
+
+    <section>
+		<h2>About Me</h2>
+    <p>
+        I'm Nori, a talented 17-year-old programmer with 5 years of experience in JavaScript and Python. I started my coding journey at the age of 12 and have been continuously honing my skills through various projects of different complexity levels.
+    </p>
+        <h2>Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1: ProSec [in progress]</li>
+            <li>Project 2: <a href="https://github.com/Exoduf0/Nos-ProxyChecker"> Nos ProxyChecker</a></li>
+            <li>Project 3: <a href="https://github.com/Exoduf0/Nos-Code-Editor"> Nos Code Editor</a></li>
+        </ul>
+        <h2>Contact Me</h2>
+        <p>
+            You can reach out to me via email at <a href="mailto:Contact@NoSTeam.xyz">Contact@NoSTeam.xyz</a
+        </p>
+	<h2>Code Snippet</h2>
+		<pre><code>(<span style="color: #0f0;">async</span> () =&gt; {
+    <span style="color: #0f0;">try</span> {
+        <span style="color: #0f0;">await</span> readDataFiles();
+        app.listen(port, () =&gt; {
+            console.<span style="color: #0f0;">log</span>(<span style="color: #f00;">`Server listening on port ${port}`</span>);
+        });
+    } <span style="color: #0f0;">catch</span> (err) {
+        console.error(<span style="color: #f00;">'Error initializing server:'</span>, err);
+        process.exit(1);
+    }
+})();</code></pre>
+    </section>
+</body>
+
+</html>
